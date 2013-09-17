@@ -1,0 +1,23 @@
+{
+  "title": "Share the Buzz",
+  "launch": "May 2012",
+  "tech": "interface design, HTML, CSS, jQuery",
+  "gallery": [
+    {
+      "filename": "buzz/buzz03.jpg",
+      "caption": "Home Page"
+    },
+    {
+      "filename": "buzz/buzz06.jpg",
+      "caption": "Page Two"
+    },
+    {
+      "filename": "buzz/buzz09.jpg",
+      "caption": "Page Three"
+    },
+    {
+      "filename": "buzz/buzz12.jpg",
+      "caption": "Page Five"
+    }
+  ]
+}

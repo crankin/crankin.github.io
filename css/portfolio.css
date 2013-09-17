@@ -1,0 +1,327 @@
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+[hidden] {
+  display: none; }
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0; }
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+a:focus {
+  outline: thin dotted; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+pre {
+  white-space: pre-wrap; }
+
+img {
+  border: 0; }
+
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  background: rgba(255, 255, 255, 0.05);
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  line-height: 1;
+  color: #686868;
+  -webkit-font-smoothing: antialiased;
+  font-family: "anonymous-pro-1","anonymous-pro-2"; }
+
+p {
+  font-weight: normal;
+  line-height: 1.6;
+  margin: 0.8rem 0;
+  padding: 0; }
+
+li {
+  line-height: 1.6; }
+
+h1, h2, h3, h4 {
+  color: #242424;
+  line-height: 1.1;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+  font-weight: normal; }
+
+a {
+  color: black;
+  background-color: white; }
+
+a:hover {
+    background-color: yellow; }
+
+.container {
+  position: relative;
+  margin: 2% 2%; }
+
+.content {
+  margin-top: 2rem; }
+
+header h1 {
+  font-size: 1.5em;
+  margin-bottom: 0.3em;
+  text-transform: uppercase;
+  background: #fff; }
+
+header p {
+  margin: .4em 0 .7em; }
+
+header a {
+  padding: .4em 0; }
+
+header #contactme {
+  clear: both; }
+
+header #contactme #phone {
+    background: #fff;
+    padding: .5em 0; }
+
+nav {
+  margin-top: 3em; }
+ 
+nav li {
+    line-height: 1.6; }
+
+nav ul {
+    margin-top: 0; }
+
+.desc {
+    background-color: rgba(235, 235, 235, 0.3);
+    border-top:1px solid #ddd;
+    border-bottom:3px solid #444; 
+    padding:0.4rem 0.8rem;}
+
+.projects {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1.0rem; }
+
+.projects li {
+    max-width: 98%;
+    margin-top: 2rem; }
+
+.projects li h3 {
+  font-size: 1.2rem;
+  line-height: 1.2;
+  margin: 0; }
+
+.projects li p.details {
+margin: 0.3rem 0;    
+
+}
+
+.projects img {
+    margin: 0px;
+    border: 2px solid #444444;
+    max-width: 100%; }
+
+.thumblink:hover {
+  background-color: transparent; }
+
+.wholeproject {
+  margin-top: 3rem;
+  font-size: 0.9rem; }
+
+.wholeproject ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+
+.wholeproject img {
+    border: 0.1rem solid #333;
+    margin: 2.5rem 0 0;
+    max-width: 100%; }
+
+.proj-page header {
+  margin-bottom: 3%; }
+
+.proj-page header h1 {
+    font-size: 1.4em;
+    margin-bottom: 0.2em;
+    text-transform: uppercase;
+    background: #fff; }
+
+.proj-page h2 {
+  font-size: 1.6em;
+  margin-bottom: 0.2em; }
+
+#proj-details {
+  color: #242424; }
+
+#proj-details p {
+    margin-bottom: 0; }
+
+#proj-desc {
+  margin-top: 0.6em; }
+
+.proj-images {
+  width: 90%; }
+
+.proj-images img {
+    max-width: 100%;
+    border: 4px solid #333333;
+    margin-top: 3%; }
+
+.gallery-img {
+    margin-top:1.4rem;
+}
+
+.resume p, .resume li {
+  line-height: 1.8; }
+.resume h3 {
+  margin: 1.5em 0 0 0; }
+.resume h4 {
+  margin: .5em 0; }
+.resume ul {
+  padding-left: 1.2em; }
+.resume #trinity p {
+  margin-top: 0;
+  margin-bottom: 0; }
+.resume #trinity p:first-child {
+  margin-top: 0.5rem; }
+.resume .workexp, .resume .otherexp {
+  font-size: .9em; }
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 768px) {
+  .container {
+    margin-left: 10%; }
+
+  .resume {
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    margin-right: 8%; }
+
+  .workexp {
+    margin-top: 2rem;
+    margin-right: 4%;
+    -webkit-box-flex: 1;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 1;
+    /* OLD - Firefox 19- */
+    width: 65%;
+    /* For old syntax, otherwise collapses. */
+    -webkit-flex: 1;
+    /* Chrome */
+    -ms-flex: 1;
+    /* IE 10 */
+    flex: 1;
+    /* For old syntax, otherwise collapses. */ }
+
+  .otherexp {
+    width: 35%;
+    margin-top: 2rem;
+    vertical-align: top; }
+
+  #proj-details, #proj-desc {
+    width: 74%; } 
+}
+                
+@media screen and (min-width: 960px) {
+  .container {
+    margin-left: 16%; }
+
+.desc {
+    width:70%;
+    padding:0.7rem 1.4rem;    
+}
+                                    
+ .projects img.gallery-img {
+       margin-top:1.8rem;}    
+
+.projects li {
+    margin-top:3rem;}
+                                    
+.projects li p {
+        font-size:1.0rem;}
+                                    
+  .imgwrap {
+    width: 80%; }
+
+  #proj-details, #proj-desc {
+    width: 64%; } 
+}

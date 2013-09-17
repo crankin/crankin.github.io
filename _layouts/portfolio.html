@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <title>Portfolio - Christopher Rankin</title>
+    <script type="text/javascript" src="//use.typekit.net/sfm0uwc.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <link rel="stylesheet" href="/css/portfolio.css">
+</head>
+
+<body>  
+    <div class="container">
+    <header>
+        <h1>Christopher Rankin</h1>
+        <p id="menulinks"><a href="/portfolio">Projects</a> | <a href="/resume">R&eacute;sum&eacute;</a> | <a href="#" id="showcontact">Contact</a></p>
+        <p id="contactme"><a href="mailto:crankin@bigcheckfactory.com">crankin@bigcheckfactory.com</a> | 512-297-8463</p>      
+    </header>
+        
+        {{ content }}
+        
+    </div><!-- container -->
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+    <script type="text/javascript" src="/js/jquery.unveil.min.js"></script>
+    <script type="text/javascript" charset="utf-8">
+        $('#contactme').hide();
+        $('#showcontact').on('click', function(e) {
+            e.preventDefault();
+            $('#contactme').slideToggle('fast');
+        });
+        
+        $('.desc').hide();
+     
+        $('.wfm a').on('click', function(e) {
+            e.preventDefault();
+            $('.wfm .desc').slideToggle('slow');
+            $('.wfm img').unveil();
+        });
+          
+          $('.buzz a').on('click', function(e) {
+            e.preventDefault();
+            $('.buzz .desc').slideToggle('slow');
+            $('.buzz img').unveil();
+        });      
+           $('.truefab a').on('click', function(e) {
+            e.preventDefault();
+            $('.truefab .desc').slideToggle('slow');
+            $('.truefab img').unveil();
+        });      
+           $('.casa a').on('click', function(e) {
+            e.preventDefault();
+            $('.casa .desc').slideToggle('slow');
+            $('.casa img').unveil();
+        });           
+        $('.relief a').on('click', function(e) {
+            e.preventDefault();
+            $('.relief .desc').slideToggle('slow');
+            $('.relief img').unveil();
+        });           
+        $('.mark a').on('click', function(e) {
+            e.preventDefault();
+            $('.mark .desc').slideToggle('slow');
+            $('.mark img').unveil();
+        }); 
+        $('.amp a').on('click', function(e) {
+            e.preventDefault();
+            $('.amp .desc').slideToggle('slow');
+            $('.amp img').unveil();
+        }); 
+        $('.tam a').on('click', function(e) {
+            e.preventDefault();
+            $('.tam .desc').slideToggle('slow');
+            $('.tam img').unveil();
+        }); 
+        $('.utsoa a').on('click', function(e) {
+            e.preventDefault();
+            $('.utsoa .desc').slideToggle('slow');
+            $('.utsoa img').unveil();
+        }); 
+        $('.redesign a').on('click', function(e) {
+            e.preventDefault();
+            $('.redesign .desc').slideToggle('slow');
+            $('.redesign img').unveil();
+        });    
+    </script>
+</body>
+</html>

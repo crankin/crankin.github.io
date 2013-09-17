@@ -1,9 +1,17 @@
-<html>
-  <head>
-    <title>My first page</title>
-  </head>
-  <body>
-    <h1>Coming Soon</h1>
-    <h3>Watch this space</h3>
-  </body>
-</html>
+---
+layout: default
+title: crankin
+---
+
+<div id="home">
+  <h1>Blog Posts</h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+      {% for page in site.pages %}
+<p><a href="{{ page.url }}">{{ page.title }}</a></p>
+      {% endfor %}
+
+</div>

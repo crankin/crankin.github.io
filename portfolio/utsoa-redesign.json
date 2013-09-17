@@ -1,0 +1,15 @@
+{
+  "title": "The University of Texas at Austin School of Architecture (UTSOA) Redesign",
+  "launch": "unrealized",
+  "tech": "interface design, graphic design, HTML, CSS, jQuery",
+  "gallery": [
+    {
+      "filename": "utsoa-redesign/utredesign1-900.png",
+      "caption": "Home Page"
+    },
+    {
+      "filename": "utsoa-redesign/utredesign2-900.png",
+      "caption": "Interior Page"
+    }
+  ]
+}
