@@ -1,61 +1,59 @@
-/*****************************************************************************/
-/*
-/* Common
-/*
-/*****************************************************************************/
-
-/* Global Reset */
 * {
-  margin: 0;
-  padding: 0;
- -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-nav,
-section,
-summary {
-    display: block;
-}
-
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;}
 
 body {
-  background-color: #FFF;
-  font: 1.0rem Helvetica, Arial, sans-serif;
-}
+    background-color: #fff;
+    font: 1.1rem Helvetica, Arial, sans-serif;
+    color:#727272;}
 
-.container {margin-left:10%;}
+.container {margin-left:8%;margin-top:8%;}
 
-.allposts {position:relative;width:60%;font-size:1.4em;font-family:courier;margin-top:4%;}
+header {
+    display:inline-block;
+    vertical-align:top;
+    width:20%;
+    position:relative;}
 
-.post {position:absolute;color:rgba(144,144,144,0.2);top:0.8em;left:0.4em;}
-
-.post ul, .post ol {
-  margin-left: 1.3rem;
-}
-
-.post code {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .2em;
-}
+.content {
+    display:inline-block;
+     vertical-align:top;
+   position:relative;
+    width:45%;
+    font-size:1.2rem;}
 
 .sidebar {
-    display:inline-block;
-    margin-left:66%;
-    width:24%;
-}
+    position:relative;
+    margin-left:4%;
+     vertical-align:top;
+   display:inline-block;
+    width:10%;}
+    
+.post {
+    position:absolute;
+    color:rgba(144,144,144,0.2);
+    top:2%;
+    left:1%;}
+
+#opt0 {
+    color:#535353;
+    top:0;
+    left:0;}
+
+.post:target {
+    z-index:40;
+    color:rgba(33,33,33,1);
+    top:0;
+    left:0;}
+
+.post ul, .post ol {
+    margin-left: 1.3rem;}
+
+.post code {
+    border: 1px solid #ddd;
+    background-color: #eef;
+    padding: 0 1%;}
 
 
-#opt0 {color:orange;top:0;left:0;}
-
-.post:target {z-index:40;color:rgba(33,33,33,1);top:0;left:0;}

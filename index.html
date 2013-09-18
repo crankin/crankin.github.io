@@ -3,22 +3,14 @@ layout: default
 title: crankin
 ---
 
-  <ul class="navi">
-    {% for post in site.posts %}
-<li><a href="#{{ post.unique }}">{{ post.title }}</a></li>
-      {% endfor %}
-</ul>
+<div class="post" id="opt0">
+<p>This blog obviously needs some more work. It's mostly a test space for me to work on various coding/design ideas. One day soon, it will be readable. For the time being, good luck.</p>
+</div>
 
-  
-<div class="allposts">
-    <div class="post" id="opt0">
-    <p>This blog obviously needs some more work. It's mostly a test space for me to work on various coding/design ideas. One day soon, it will be readable. For the time being, good luck.</p>
-    </div>
-    {% for post in site.posts %}
+{% for post in site.posts %}
     <div class="post" id="{{ post.unique }}">
     <h3>{{ post.title }}</h3>
     <p>{{ post.date | date_to_string }}</p>
     {{ post.content }}
-      </div>
-      {% endfor %}
-</div>
+    </div>
+{% endfor %}

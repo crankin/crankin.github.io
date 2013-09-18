@@ -1,0 +1,5 @@
+<ul class="navi">
+    {% for post in site.posts %}
+    <li><a href="#{{ post.unique }}">{{ post.title }}</a></li>
+    {% endfor %}
+</ul>
