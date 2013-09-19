@@ -102,7 +102,7 @@ body {
   line-height: 1;
   color: #686868;
   -webkit-font-smoothing: antialiased;
-  font-family: "anonymous-pro-1","anonymous-pro-2"; }
+  font-family: 'Anonymous Pro', sans-serif;}
 
 p {
   font-weight: normal;
