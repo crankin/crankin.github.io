@@ -10,31 +10,42 @@ body {
     font-family: "ff-tisa-web-pro-1","ff-tisa-web-pro-2";
     color:#727272;}
 
-.container {margin-left:8%;margin-top:8%;font-size:1.1rem;}
+a {color:lime;}
+a:hover {color:#333;background-color:#ddd;}
+a:active {color:violet;background-color:transparent;}
 
-header {
-    display:inline-block;
-    vertical-align:top;
-    width:20%;
-    position:relative;}
-
-header h1 {font-weight:normal;}
-
-.content {
-    display:inline-block;
-     vertical-align:top;
-   position:relative;
-    width:45%;
-    font-size:1.2rem;
-line-height:1.6;}
+.container {
+    margin-left:8%;
+    margin-top:8%;
+    font-size:1.1rem;}
 
 .sidebar {
     position:relative;
     margin-left:4%;
      vertical-align:top;
    display:inline-block;
-    width:10%;}
-    
+    width:20%;}
+
+header {
+    /*display:inline-block;*/
+    vertical-align:top;
+    /*width:20%;*/
+    position:relative;
+    margin-bottom: 3em;}
+
+header h1 {font-weight:normal;margin-top:0;margin-bottom:0.2em;}    
+
+.sidebar {font-size: 0.9rem;}
+.navi {list-style: none;}
+
+.content {
+    display:inline-block;
+     vertical-align:top;
+   position:relative;
+    width:55%;
+    font-size:1.2rem;
+line-height:1.6;}
+
 .post {
     position:absolute;
     color:rgba(144,144,144,0.2);
