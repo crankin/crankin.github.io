@@ -18,7 +18,7 @@
         
         <section class="sidebar">
         <header>
-        <h1><a href="/">{{ site.name }}</a></h1>
+        <h1><a href="#" class="headlink">{{ site.name }}</a></h1>
         {% include blognav.html %}
         </header>  
         
@@ -26,10 +26,16 @@
         </section>
     </div>
     
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> <script type="text/javascript" charset="utf-8">        
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> <script type="text/javascript" charset="utf-8"> 
+       $('.post:first-child').addClass('firstone');
+
     $('.navi').on('click', function(e){
-      $('#opt0').hide();
+    $('.post:first-child').removeClass('firstone');
     });
+     $('.headlink').on('click', function(){
+    $('.post:first-child').addClass('firstone');
+            e.preventDefault();
+      });   
 </script>
 </body>
 </html>
