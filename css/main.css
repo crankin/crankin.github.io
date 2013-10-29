@@ -29,16 +29,14 @@ h1 a {color:rgb(3,66,204);}
     font-family: "ff-tisa-sans-web-pro-1","ff-tisa-sans-web-pro-2", sans-serif;
     font-size:1.0rem;
     line-height: 1.4;
-    position:relative; 
-    float: right;
+    position:relative;
     background:#fff;
     z-index: 88;
-    padding: 0 1em;
-    width: 40%;}
+    width: 80%;}
 
 .m-nav header {
     vertical-align:top;
-    }
+    text-align: right;}
 
 .m-nav header h1 {
     font-weight:normal;
@@ -48,8 +46,14 @@ h1 a {color:rgb(3,66,204);}
 
 .m-nav .navi {
     list-style: none;
-    margin-bottom: 3em;
+    margin-bottom: 2em;
     }
+
+.m-nav .m-links {
+    padding: 0 3em;
+    }
+
+.m-nav .m-links a {display:block;width: 100%;}
 
 .sidebar {display: none;}
 
