@@ -2,13 +2,15 @@
     margin: 0;
     padding: 0;
     -webkit-box-sizing: border-box;
-    box-sizing: border-box;}
+    box-sizing: border-box;
+    }
 
 body {
     background-color: #fff;
     font-size:100%;
     font-family: "ff-tisa-web-pro-1","ff-tisa-web-pro-2";
-    color:#727272;}
+    color:#727272;
+    }
 
 a {color:rgb(28,212,0);}
 a:hover {color:rgb(255,124,0);background-color:#ddd;}
@@ -16,51 +18,44 @@ a:active {color:rgb(3,66,204);background-color:transparent;}
 h1 a {color:rgb(3,66,204);}
 
 .container {
-    margin-left:8%;
-    margin-top:8%;
-    width: 80%;
+    margin-left:2%;
+    margin-top:1%;
+    width: 96%;
     font-size:1.1rem;
     position: relative;
-    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-    display: -ms-flexbox;      /* TWEENER - IE 10 */
-    display: -webkit-flex;     /* NEW - Chrome */
-    display: flex;}
+    }
 
-.sidebar {
+.m-nav {
     font-family: "ff-tisa-sans-web-pro-1","ff-tisa-sans-web-pro-2", sans-serif;
     font-size:1.0rem;
     line-height: 1.4;
-    -webkit-box-flex: 1;      /* OLD - iOS 6-, Safari 3.1-6 */
-    -moz-box-flex: 1;         /* OLD - Firefox 19- */
-    width: 25%;               /* For old syntax, otherwise collapses. */
-    -webkit-flex: 1;          /* Chrome */
-    -ms-flex: 1;              /* IE 10 */
-    flex: 1;   
-    vertical-align:top;
-    position:relative; }
+    position:relative; 
+    float: right;
+    background:#fff;
+    z-index: 88;
+    padding: 0 1em;
+    width: 40%;}
 
-header {
+.m-nav header {
     vertical-align:top;
-    margin-bottom: 3em;}
+    }
 
-header h1 {
+.m-nav header h1 {
     font-weight:normal;
     margin-top:0;
-    margin-bottom:0.2em;}    
+    margin-bottom:0.2em;
+    margin-right: 1em;}    
 
-.navi {list-style: none;}
+.m-nav .navi {
+    list-style: none;
+    margin-bottom: 3em;
+    }
+
+.sidebar {display: none;}
 
 .content {
-    vertical-align:top;
-    -webkit-box-flex: 3;      /* OLD - iOS 6-, Safari 3.1-6 */
-    -moz-box-flex: 3;         /* OLD - Firefox 19- */
-    width: 75%;               /* For old syntax, otherwise collapses. */
-    -webkit-flex: 3;          /* Chrome */
-    -ms-flex: 3;              /* IE 10 */
-    flex: 3;  
     position:relative;
-    margin-right:1em;}
+    }
 
 .post {
     position:absolute;
@@ -100,4 +95,64 @@ header h1 {
 .post ul, .post ol {
     margin-left: 1.3rem;}
 
+@media screen and (min-width: 690px) {
+.container {
+    width: 92%;
+    margin-left: 3%;
+    margin-top:8%;
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;
+    }
 
+.m-nav {display: none;}
+
+.sidebar {
+    -webkit-box-flex: 1;      /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 1;         /* OLD - Firefox 19- */
+    width: 25%;               /* For old syntax, otherwise collapses. */
+    -webkit-flex: 1;          /* Chrome */
+    -ms-flex: 1;              /* IE 10 */
+    flex: 1;   
+    vertical-align:top;
+     font-family: "ff-tisa-sans-web-pro-1","ff-tisa-sans-web-pro-2", sans-serif;
+    font-size:1.0rem;
+    line-height: 1.4;
+    position:relative; 
+    display: inline;
+    }
+
+.sidebar header {
+    vertical-align:top;
+    }
+
+.sidebar header h1 {
+    font-weight:normal;
+    margin-top:0;
+    margin-bottom:0.2em;}    
+
+.sidebar .navi {
+    list-style: none;
+    margin-bottom: 3em;
+    }
+
+.content {
+    vertical-align:top;
+    -webkit-box-flex: 3;      /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 3;         /* OLD - Firefox 19- */
+    width: 75%;               /* For old syntax, otherwise collapses. */
+    -webkit-flex: 3;          /* Chrome */
+    -ms-flex: 3;              /* IE 10 */
+    flex: 3;  
+    margin-right:1em;
+    }
+}
+
+@media screen and (min-width: 920px) {
+.container {
+    margin-left:8%;
+    width: 80%;
+    }
+}

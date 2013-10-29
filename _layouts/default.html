@@ -19,23 +19,35 @@
         <section class="sidebar">
         <header>
         <h1><a href="#" class="headlink">{{ site.name }}</a></h1>
-        {% include blognav.html %}
         </header>  
-        
+        {% include blognav.html %}
         {% include otherstuff.html %}
+        </section>
+        <section class="m-nav">
+        <header>
+        <h1><a href="#" class="headlink">{{ site.name }}</a></h1>
+        </header>
+        <div class="m-links">  
+        {% include blognav.html %}
+        {% include otherstuff.html %}
+        </div>
         </section>
     </div>
     
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> <script type="text/javascript" charset="utf-8"> 
        $('.post:first-child').addClass('firstone');
-
     $('.navi').on('click', function(e){
     $('.post:first-child').removeClass('firstone');
     });
      $('.headlink').on('click', function(){
     $('.post:first-child').addClass('firstone');
             e.preventDefault();
-      });   
+      });
+      $('.m-links').css('display','none');
+      $('.m-nav header').on('click', function(e){
+        $('.m-links').slideToggle();
+      });
+
 </script>
 </body>
 </html>
