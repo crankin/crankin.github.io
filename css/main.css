@@ -28,6 +28,9 @@ h1 a {color:rgb(3,66,204);}
     display: flex;}
 
 .sidebar {
+    font-family: "ff-tisa-sans-web-pro-1","ff-tisa-sans-web-pro-2", sans-serif;
+    font-size:1.0rem;
+    line-height: 1.4;
     -webkit-box-flex: 1;      /* OLD - iOS 6-, Safari 3.1-6 */
     -moz-box-flex: 1;         /* OLD - Firefox 19- */
     width: 25%;               /* For old syntax, otherwise collapses. */
@@ -42,11 +45,9 @@ header {
     margin-bottom: 3em;}
 
 header h1 {
-    font-weight:bold;
+    font-weight:normal;
     margin-top:0;
     margin-bottom:0.2em;}    
-
-.sidebar {font-size: 0.9rem;}
 
 .navi {list-style: none;}
 
