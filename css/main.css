@@ -26,7 +26,7 @@ h1 a {color:rgb(3,66,204);}
     }
 
 .m-nav {
-    font-family: pt-sans, sans-serif;
+     font-family: 'Varela', sans-serif;
     font-size:1.0rem;
     line-height: 1.4;
     position:relative;
@@ -121,7 +121,7 @@ h1 a {color:rgb(3,66,204);}
     -ms-flex: 1;              /* IE 10 */
     flex: 1;   
     vertical-align:top;
-     font-family: 'PT Sans', 'Verla', sans-serif;
+     font-family: 'Varela', sans-serif;
     font-size:1.0rem;
     line-height: 1.4;
     position:relative; 
