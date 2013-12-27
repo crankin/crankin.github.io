@@ -8,7 +8,7 @@
 body {
     background-color: #fff;
     font-size:100%;
-    font-family: sorts-mill-goudy, serif;
+    font-family: 'Sorts Mill Goudy', serif;
     color:#727272;
     }
 
@@ -121,7 +121,7 @@ h1 a {color:rgb(3,66,204);}
     -ms-flex: 1;              /* IE 10 */
     flex: 1;   
     vertical-align:top;
-     font-family: "ff-tisa-sans-web-pro-1","ff-tisa-sans-web-pro-2", sans-serif;
+     font-family: 'PT Sans', 'Verla', sans-serif;
     font-size:1.0rem;
     line-height: 1.4;
     position:relative; 
