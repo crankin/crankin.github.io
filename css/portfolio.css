@@ -109,7 +109,7 @@ header #contactme #phone {
     background-color: rgba(235, 235, 235, 0.3);
     border-top: 1px solid #ddd;
     border-bottom: 3px solid #ddd; 
-    padding: 0.4rem 0.8rem;}
+    padding: 0.4rem 0.8rem; }
 
 .projects {
   list-style: none;
@@ -125,17 +125,17 @@ header #contactme #phone {
   line-height: 1.2;
   margin: 0; }
 
-/*.projects li p.details {
-margin: 0.3rem 0; 
-}*/
-
 .projects img {
     margin: 0;
     border: 2px solid #444444;
     max-width: 100%; }
 
-/*.thumblink:hover {
-  background-color: transparent; }*/
+.thumblink:hover {
+  background-color: transparent; }
+
+.projects img.gallery-img {
+  margin-top: 1.4rem;
+  border: 1px solid #444; }
 
 /*.wholeproject {
   margin-top: 3rem;
@@ -181,10 +181,7 @@ margin: 0.3rem 0;
     border: 4px solid #333333;
     margin-top: 3%; }*/
 
-.gallery-img {
-  margin-top: 1.4rem;
-  border: 1px solid #444;
-}
+
 
 .resume p, .resume li {
   line-height: 1.8; }
