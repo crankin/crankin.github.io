@@ -122,8 +122,8 @@ h1 a {color:rgb(3,66,204);}
     flex: 1;   
     vertical-align:top;
      font-family: 'Varela', sans-serif;
-    font-size:1.0rem;
-    line-height: 1.4;
+    font-size:0.9rem;
+    line-height: 1.8;
     position:relative; 
     display: inline;
     }
