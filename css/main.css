@@ -69,6 +69,11 @@ h1 a {color:rgb(3,66,204);}
     font-size:1rem;
     line-height:1.2;}
 
+.post ul, .post ol {
+    margin-left: 1.3rem;}
+
+.post li {margin-bottom: 0.3rem;}
+
 .firstone {
     color:rgba(33,33,33,1);
     z-index: 30;
@@ -96,8 +101,8 @@ h1 a {color:rgb(3,66,204);}
     color:rgba(99,99,99,1);
     font-size:0.8em;}
 
-.post ul, .post ol {
-    margin-left: 1.3rem;}
+.post:target li:nth-child(even), .firstone li:nth-child(even) {color: rgb(180,180,180); }
+.post:target li:nth-child(odd), .firstone li:nth-child(odd) {color: rgb(110,110,110); }
 
 @media screen and (min-width: 690px) {
 .container {
