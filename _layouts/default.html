@@ -39,6 +39,7 @@
 
   $('.navi').on('click', function(e){
     $('.post:first-child').removeClass('firstone');
+    e.preventDefault();
   });
 
   $('.headlink').on('click', function(){
