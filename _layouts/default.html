@@ -41,7 +41,7 @@
     $('.post:first-child').removeClass('firstone');
   });
 
-  $('.headlink').on('click', function(e){
+  $('.headlink').on('click', function(){
     $('.post:first-child').addClass('firstone');
     e.preventDefault();
   });
@@ -55,6 +55,7 @@
 
   $('.m-links').on('click', function(e){
     $('.m-links').slideToggle('fast');
+    e.preventDefault();
   });
 </script>
 </body>
