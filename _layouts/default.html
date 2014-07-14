@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>{{ page.title }}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href='http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy|Varela' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/main.css">
@@ -14,11 +14,11 @@
         <section class="content">
         {{ content }}
         </section>
-        
+
         <section class="sidebar">
         <header>
         <h1><a href="#" class="headlink">{{ site.name }}</a></h1>
-        </header>  
+        </header>
         {% include blognav.html %}
         {% include otherstuff.html %}
         </section>
@@ -26,30 +26,37 @@
         <header>
         <h1><a href="#" class="headlink">{{ site.name }}</a></h1>
         </header>
-        <div class="m-links">  
+        <div class="m-links">
         {% include blognav.html %}
         {% include otherstuff.html %}
         </div>
         </section>
     </div>
-    
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> <script type="text/javascript" charset="utf-8"> 
-       $('.post:first-child').addClass('firstone');
-    $('.navi').on('click', function(e){
-    $('.post:first-child').removeClass('firstone');
-    });
-     $('.headlink').on('click', function(){
-    $('.post:first-child').addClass('firstone');
-            e.preventDefault();
-      });
-      $('.m-links').css('display','none');
-      $('.m-nav header').on('click', function(e){
-        $('.m-links').slideToggle();
-      });
-      $('.m-links').on('click', function(e){
-        $('.m-links').slideToggle('fast');
-      });
 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" charset="utf-8">
+  $('.post:first-child').addClass('firstone');
+
+  $('.navi').on('click', function(e){
+    $('.post:first-child').removeClass('firstone');
+  });
+
+  $('.headlink').on('click', function(){
+    $('.post:first-child').addClass('firstone');
+    e.preventDefault();
+  });
+
+  $('.m-links').css('display','none');
+
+  $('.m-nav header').on('click', function(e){
+    $('.m-links').slideToggle();
+    e.preventDefault();
+  });
+
+  $('.m-links').on('click', function(e){
+    $('.m-links').slideToggle('fast');
+    e.preventDefault();
+  });
 </script>
 </body>
 </html>
