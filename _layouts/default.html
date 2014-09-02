@@ -10,53 +10,35 @@
     <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
-    <div class="container">
-        <section class="content">
-        {{ content }}
-        </section>
 
-        <section class="sidebar">
-        <header>
-        <h1><a href="#" class="headlink">{{ site.name }}</a></h1>
-        </header>
-        {% include blognav.html %}
-        {% include otherstuff.html %}
-        </section>
-        <section class="m-nav">
-        <header>
-        <h1><a href="#" class="headlink">{{ site.name }}</a></h1>
-        </header>
-        <div class="m-links">
-        {% include blognav.html %}
-        {% include otherstuff.html %}
-        </div>
-        </section>
-    </div>
+  <header>
+    <h1><a href="/">crankin</a></h1>
+  </header>
+
+    <section class="main">
+    <article>
+      {{ content }}
+    </article>
+    </section>
+
+    <section class="archive">
+      {% include archives.html %}
+    </section>
+
+  <nav>
+    {% include blognav.html %}
+  </nav>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script type="text/javascript" charset="utf-8">
-  $('.post:first-child').addClass('firstone');
-
-  $('.navi').on('click', function(e){
-    $('.post:first-child').removeClass('firstone');
-  });
-
-  $('.headlink').on('click', function(){
-    $('.post:first-child').addClass('firstone');
-    e.preventDefault();
-  });
-
-  $('.m-links').css('display','none');
-
-  $('.m-nav header').on('click', function(e){
-    $('.m-links').slideToggle();
-    e.preventDefault();
-  });
-
-  $('.m-links').on('click', function(e){
-    $('.m-links').slideToggle('fast');
-    e.preventDefault();
-  });
+    $('.mswitch').on('click', function(e){
+      if ($('nav').hasClass('navtop')) {
+        $('nav').removeClass('navtop');
+      } else {
+        $('nav').addClass('navtop');
+      }
+      e.preventDefault();
+      });
 </script>
 </body>
 </html>
