@@ -113,10 +113,30 @@ article li {margin-bottom: 0.3rem;}
 
 
 @media screen and (min-width: 690px) {
+.main {
+  top:8%;
+  left:4%;
+  width:82%;
+}
 
+.archive {
+  top:10%;
+  left:7%;
+  width:74%;
+}
 }
 
 
 @media screen and (min-width: 920px) {
+.main {
+  top:8%;
+  left:7%;
+  width:72%;
+}
 
+.archive {
+  top:10%;
+  left:9%;
+  width:80%;
+}
 }
