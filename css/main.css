@@ -27,11 +27,19 @@ header {
   position:absolute;
 }
 
-section {
+.main {
   top:8%;
   left:1%;
   width:98%;
   z-index:10;
+  position:absolute;
+}
+
+.archive {
+  top:12%;
+  left:3%;
+  width:94%;
+  z-index:7;
   position:absolute;
 }
 
