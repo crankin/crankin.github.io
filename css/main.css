@@ -36,16 +36,16 @@ header {
 }
 
 .archive {
-  top:12%;
-  left:3%;
-  width:94%;
+  top:10%;
+  left:7%;
+  width:86%;
   z-index:7;
   position:absolute;
 }
 
 article {
   position:absolute;
-  color:rgba(144,144,144,0.2);
+  color:rgba(180,180,180,0.2);
   top:3.4em;
   left:1em;
   font-size:1rem;
