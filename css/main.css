@@ -72,7 +72,8 @@ nav {
 .navpost a {display:block;width: 100%;color:rgb(204,29,29);}
 .navpost a:hover {color:rgb(255,124,0);}
 
-a.mswitch {color:rgb(204,29,29);}
+.mswitch {color:rgb(204,29,29);}
+.mswitch:hover {color:rgb(255,124,0);}
 
 .navtop {z-index:90;}
 
