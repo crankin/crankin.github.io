@@ -60,7 +60,7 @@ nav {
   font-size:1.0rem;
   line-height: 1.4;
   position:absolute;
-  background:#fff;
+  background:rgba(255,255,255,0.7);
   width:40%;
 }
 
@@ -69,7 +69,7 @@ nav {
   opacity: 0.3;
   }
 
-.navpost a {display:block;width: 100%;}
+.navpost a {display:block;width: 100%;color:rgb(171,26,23);}
 
 .navtop {z-index:90;}
 
@@ -91,6 +91,7 @@ article li {margin-bottom: 0.3rem;}
   }
 
 .main article a {color:rgb(28,212,0);}
+.main article a:hover {color:rgb(255,124,0);}
 
 .main article h3 {
   font-weight:bold;
