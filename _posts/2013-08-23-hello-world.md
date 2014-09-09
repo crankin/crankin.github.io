@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Hello World!!!
-date: 2013-08-23 00:19:00
 categories: jekyll
 ---
 
