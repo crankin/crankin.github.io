@@ -3,17 +3,17 @@
 <head>
         <link href='http://fonts.googleapis.com/css?family=Anonymous+Pro' rel='stylesheet' type='text/css'>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Resume - Christopher Rankin</title>
     <link rel="stylesheet" href="/css/portfolio.css">
 </head>
 
-<body>  
+<body>
     <div class="container">
     <header>
         <h1>Christopher Rankin</h1>
         <p id="menulinks"><a href="/portfolio" id="showprojects">Projects</a> | <a href="#" id="showcontact">Contact</a></p>
-        <p id="contactme"><a href="mailto:crankin@bigcheckfactory.com">crankin@bigcheckfactory.com</a> | 512-297-8463</p>      
+        <p id="contactme"><a href="mailto:crankin@bigcheckfactory.com">crankin@bigcheckfactory.com</a> | 512-297-8463</p>
     </header>
 
     <div class="resume">
@@ -21,22 +21,23 @@
             <h2>Experience</h2>
             {% block experience %}{% endblock %}
         </section>
-        <section class="content otherexp">  
+        <section class="content otherexp">
             <h3>Tools</h3>
             {% block tools %}{% endblock %}
-            
+
             <h3>Education</h3>
             <div id="trinity">
             {% block education %}{% endblock %}
             </div>
-            
+
             <h3>Other Experience</h3>
             {% block other %}{% endblock %}
-        </section>  
+        </section>
     </div>
     </div>
-    
- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+
+<script type="text/javascript" src="js/zepto.min.js"></script>
+ 
 <!--<script src="http://cdnjs.cloudflare.com/ajax/libs/zepto/1.0rc1/zepto.min.js"></script>
     -->
     <script type="text/javascript" charset="utf-8">
@@ -44,7 +45,7 @@
         $('#showcontact').on('click', function(e) {
             e.preventDefault();
             $('#contactme').slideToggle('fast');
-        });     
+        });
     </script>
 </body>
 </html>
