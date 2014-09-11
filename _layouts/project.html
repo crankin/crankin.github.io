@@ -2,19 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <title>{{ model.title }} - Christopher Rankin</title>
     <script type="text/javascript" src="//use.typekit.net/sfm0uwc.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     {{ "portfolio.css" | asset_url | stylesheet_tag }}
 </head>
 
-<body>
+<body>  
     <div class="container">
     <header>
         <h1>Christopher Rankin</h1>
         <p id="menulinks"><a href="/projects/resume">R&eacute;sum&eacute;</a> | <a href="#projectnav" id="showprojects">Projects</a> | <a href="#" id="showcontact">Contact</a></p>
-        <p id="contactme"><a href="mailto:crankin@bigcheckfactory.com">crankin@bigcheckfactory.com</a> | 512-297-8463</p>
+        <p id="contactme"><a href="mailto:crankin@bigcheckfactory.com">crankin@bigcheckfactory.com</a> | 512-297-8463</p>      
     </header>
 
     <div class="wholeproject">
@@ -35,7 +35,7 @@
         {% endfor %}
     </ul>
     </div>
-
+    
     <nav id="projectnav">
       <h3><a href="/portfolio">Projects</a></h3>
       <ul>
@@ -49,11 +49,10 @@
         <li><a href="/projects/texas-museums">Texas Association of Museums</a></li>
         <li><a href="/projects/utsoa">UTSOA</a></li>
       </ul>
-    </nav>
+    </nav>    
   </div>
 
-<script type="text/javascript" src="js/zepto.min.js"></script>
-
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <!--<script src="http://cdnjs.cloudflare.com/ajax/libs/zepto/1.0rc1/zepto.min.js"></script>-->
 {{ "jquery.scrollTo-min.js" | asset_url | script_tag }}
 
@@ -64,12 +63,12 @@
       e.preventDefault();
       $('#contactme').slideToggle('fast');
     });
-
+    
     $("#showprojects").click(function(e){
       e.preventDefault();
       $.scrollTo('#projectnav',1000);
-    });
-  });
-</script>
+    });   
+  });      
+</script> 
 </body>
 </html>
