@@ -1,7 +1,6 @@
 ---
 layout: post
 title: The Second Post
-date: 2013-10-20 23:30:00
 categories: jekyll
 ---
 
