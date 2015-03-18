@@ -3,23 +3,23 @@
 <head>
     <link href='http://fonts.googleapis.com/css?family=Anonymous+Pro' rel='stylesheet' type='text/css'>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ page.title }} - Christopher Rankin</title>
     <link rel="stylesheet" href="/css/portfolio.css">
 </head>
 
-<body>  
+<body>
     <div class="container">
     <header>
         <h1>Christopher Rankin</h1>
         <p id="menulinks"><a href="/portfolio">Projects</a> | <a href="/resume">R&eacute;sum&eacute;</a> | <a href="#" id="showcontact">Contact</a></p>
-        <p id="contactme"><a href="mailto:crankin@bigcheckfactory.com">crankin@bigcheckfactory.com</a> | 512-297-8463</p>      
+        <p id="contactme"><a href="mailto:crankin@bigcheckfactory.com">crankin@bigcheckfactory.com</a> | 512-297-8463</p>
     </header>
-        
+
         {{ content }}
-        
+
     </div><!-- container -->
-     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script type="text/javascript" src="/js/jquery.unveil.min.js"></script>
     <script type="text/javascript" charset="utf-8">
         $('#contactme').hide();
@@ -27,9 +27,14 @@
             e.preventDefault();
             $('#contactme').slideToggle('fast');
         });
-        
+
         $('.desc').hide();
-     
+
+        $('.ctg a[href="#"]').on('click', function(e) {
+            e.preventDefault();
+            $('.ctg .desc').slideToggle('slow');
+            $('.ctg img').unveil(200);
+        });
         $('.wfm a[href="#"]').on('click', function(e) {
             e.preventDefault();
             $('.wfm .desc').slideToggle('slow');
@@ -39,47 +44,47 @@
             e.preventDefault();
             $('.buzz .desc').slideToggle('slow');
             $('.buzz img').unveil(200);
-        });      
+        });
            $('.truefab a[href="#"]').on('click', function(e) {
             e.preventDefault();
             $('.truefab .desc').slideToggle('slow');
             $('.truefab img').unveil(200);
-        });      
+        });
            $('.casa a[href="#"]').on('click', function(e) {
             e.preventDefault();
             $('.casa .desc').slideToggle('slow');
             $('.casa img').unveil(200);
-        });           
+        });
         $('.relief a[href="#"]').on('click', function(e) {
             e.preventDefault();
             $('.relief .desc').slideToggle('slow');
             $('.relief img').unveil(200);
-        });           
+        });
         $('.mark a[href="#"]').on('click', function(e) {
             e.preventDefault();
             $('.mark .desc').slideToggle('slow');
             $('.mark img').unveil(200);
-        }); 
+        });
         $('.amp a[href="#"]').on('click', function(e) {
             e.preventDefault();
             $('.amp .desc').slideToggle('slow');
             $('.amp img').unveil(200);
-        }); 
+        });
         $('.tam a[href="#"]').on('click', function(e) {
             e.preventDefault();
             $('.tam .desc').slideToggle('slow');
             $('.tam img').unveil(200);
-        }); 
+        });
         $('.utsoa a[href="#"]').on('click', function(e) {
             e.preventDefault();
             $('.utsoa .desc').slideToggle('slow');
             $('.utsoa img').unveil(200);
-        }); 
+        });
         $('.redesign a[href="#"]').on('click', function(e) {
             e.preventDefault();
             $('.redesign .desc').slideToggle('slow');
             $('.redesign img').unveil(200);
-        });    
+        });
     </script>
 </body>
 </html>
