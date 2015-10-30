@@ -19,7 +19,7 @@
     <p>We've worked on small and large websites, mobile apps, and a bunch of other online projects. We can guide you through the entire process &mdash; from planning to launch &mdash; or jump in at any stage and work with your in-house creative department or outside design agency.<br><br>
       We work closely with clients to make sure the project meets their goals. And we make sure that we provide them with simple, useable tools they can use to manage or expand the project in the future.</p>
 
-      <p>crankin is also the <i>nom de plume</i> of Christopher Rankin, a web developer / designer / creative coder with over 20 years of public and nonprofit experience working for KLRU, the UT-Austin School of Architecture, the Texas Commission on the Arts, and the Austin Museum of Art. He sometimes writes about current interests &mdash; the intersection of art and technology, networks, public art, urban interventions, museums, animated GIFs &mdash; at <a href="http://getcrank.in/blog">getcrank.in/blog</a>.</p>
+      <p>crankin is also the <i>nom de plume</i> of Christopher Rankin, a web developer / designer / creative coder with over 18 years of public and nonprofit experience working for KLRU, the UT-Austin School of Architecture, the Texas Commission on the Arts, and the Austin Museum of Art. He sometimes writes about current interests &mdash; the intersection of art and technology, networks, public art, urban interventions, museums, animated GIFs &mdash; at <a href="http://getcrank.in/blog">getcrank.in/blog</a>.</p>
 
       <ul>
         <li>crankin@getcrank.in</li>
@@ -35,8 +35,21 @@
     </header>
 
     <section class="screens">
+      
+  {% for proj in site.projects %}
+  <div class="thumb"><a href="#{{ proj.path }}"><img src="http://www.bigcheckfactory.com/img/{{ proj.path }}/thumb.png"><h3>{{ proj.title }}</h3></a></div>
+  <div class="remodal" data-remodal-id="{{ proj.path }}">
+        <h4>{{ proj.title }}<i>({{ proj.launch }})</i></h4>
+        <p><a href="http://{{ proj.url }}">{{ proj.url }}</a></p>
+        <p class="toolline">{{ proj.tech }}</p>
+        {{ proj.content }}
+        {% for pic in proj.shots %}
+        <img src="http://www.bigcheckfactory.com/img/{{ proj.path }}/{{ pic.img }}" alt="{{ pic.alt }}">
+        {% endfor %}
+      </div>
+  {% endfor %}      
+      
       <div class="thumb"><a href="#amp"><img src="http://www.bigcheckfactory.com/img/amp/thumb.png"><h3>Austin Museum Partnership</h3></a></div>
-
       <div class="remodal" data-remodal-id="amp">
         <h4>Austin Museum Partnership <i>(2009)</i></h4>
         <p><a href="http://www.austinmuseums.org">www.austinmuseums.org</a></p>
@@ -51,7 +64,6 @@
       </div>
 
       <div class="thumb"><a href="#casa"><img src="http://www.bigcheckfactory.com/img/casa/thumb.jpg"><h3>Casa Montessori</h3></a></div>
-
       <div class="remodal" data-remodal-id="casa">
         <h4>Casa Montessori <i>(2012)</i></h4>
         <p><a href="http://www.casa-montessori.org">www.casa-montessori.org</a></p>
@@ -65,7 +77,6 @@
       </div>
 
       <div class="thumb"><a href="#mark"><img src="http://www.bigcheckfactory.com/img/mark/thumb.jpg"><h3>MARK Skateboards</h3></a></div>
-
       <div class="remodal" data-remodal-id="mark">
         <h4>MARK Skateboards <i>(2011)</i></h4>
         <p class="toolline">interactive design, HTML, CSS, Javascript/jQuery, Stacey CMS, Big Cartel API</p>
