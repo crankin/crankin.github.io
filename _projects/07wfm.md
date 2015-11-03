@@ -1,6 +1,6 @@
 ---
 title: Whole Foods Market
-path: wholefoods
+pid: wholefoods
 launch: 2011 - 2013
 tech: interface design, graphic design, Photoshop, HTML, CSS, jQuery, Drupal
 shots:

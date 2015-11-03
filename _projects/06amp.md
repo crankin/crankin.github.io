@@ -1,8 +1,8 @@
 ---
 title: Austin Museum Partnership
-path: amp
+pid: amp
 launch: 2009 and 2014
-link: www.austinmuseums.org
+purl: www.austinmuseums.org
 tech: interface design, graphic design, HTML, CSS, jQuery, PHP, Wordpress
 shots:
  - img: amp3-b-home.jpg

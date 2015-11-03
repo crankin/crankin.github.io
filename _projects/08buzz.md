@@ -1,6 +1,6 @@
 ---
 title: Share the Buzz
-path: buzz
+pid: buzz
 launch: 2012
 tech: interface design, HTML, CSS, jQuery
 shots:

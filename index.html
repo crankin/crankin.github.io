@@ -9,7 +9,7 @@ title: crankin
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{{ title }}</title>
+  <title>{{ page.title }}</title>
   <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/jquery.remodal.css">
   <link rel="stylesheet" href="/css/home.css">
@@ -35,20 +35,20 @@ title: crankin
     </section>
 
     <header>
-      <h1>{{ title }}</h1>
+      <h1>{{ page.title }}</h1>
     </header>
 
     <section class="screens">
       
   {% for proj in site.projects %}
-  <div class="thumb"><a href="#{{ proj.path }}"><img src="http://www.bigcheckfactory.com/img/{{ proj.path }}/thumb.png"><h3>{{ proj.title }}</h3></a></div>
-  <div class="remodal" data-remodal-id="{{ proj.path }}">
+  <div class="thumb"><a href="#{{ proj.path }}"><img src="http://www.bigcheckfactory.com/img/{{ proj.pid }}/thumb.png"><h3>{{ proj.title }}</h3></a></div>
+  <div class="remodal" data-remodal-id="{{ proj.pid }}">
         <h4>{{ proj.title }}<i>({{ proj.launch }})</i></h4>
-        <p><a href="http://{{ proj.url }}">{{ proj.url }}</a></p>
+        <p><a href="http://{{ proj.purl }}">{{ proj.purl }}</a></p>
         <p class="toolline">{{ proj.tech }}</p>
         {{ proj.content }}
         {% for pic in proj.shots %}
-        <img src="http://www.bigcheckfactory.com/img/{{ proj.path }}/{{ pic.img }}" alt="{{ pic.alt }}">
+        <img src="http://www.bigcheckfactory.com/img/{{ proj.pid }}/{{ pic.img }}" alt="{{ pic.alt }}">
         {% endfor %}
       </div>
   {% endfor %}      

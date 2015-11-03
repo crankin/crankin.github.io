@@ -1,8 +1,8 @@
 ---
 title: An Eastside Education
-path: eastside
+pid: eastside
 launch: June 2015
-url: www.klru.org/eastside
+purl: www.klru.org/eastside
 tech: interface design, HTML, CSS, JavaScript, Jekyll
  - img: aee-800-01.jpg
    alt: Home

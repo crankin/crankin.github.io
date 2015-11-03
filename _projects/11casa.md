@@ -1,8 +1,8 @@
 ---
 title: Casa Montessori
 launch: July 2012
-path: casa
-link: www.casa-montessori.org
+pid: casa
+purl: www.casa-montessori.org
 tech: WordPress, HTML, CSS, jQuery, PHP
 shots:
  - img: 01.jpg

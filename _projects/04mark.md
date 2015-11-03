@@ -1,6 +1,6 @@
 ---
 title: MARK Skateboards
-path: mark
+pid: mark
 launch: May 2011
 tech: interactive design, HTML, CSS, jQuery, Stacey CMS, Big Cartel
 shots:

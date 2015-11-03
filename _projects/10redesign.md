@@ -1,7 +1,7 @@
 ---
 title: UTSOA Redesign Proposal
 launch: 2011
-path: redesign
+pid: redesign
 tech: interface design, graphic design, HTML, CSS, jQuery
 shots:
  - img: .jpg

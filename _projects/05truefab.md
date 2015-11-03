@@ -1,8 +1,8 @@
 ---
 title: True Fabrication Bicycles
-path: truefab
+pid: truefab
 launch: February 2012
-link: www.truefabricationbicycles.com
+purl: www.truefabricationbicycles.com
 tech: WordPress, HTML, CSS, jQuery, PHP, Flicker API
 shots:
  - img: 01.jpg

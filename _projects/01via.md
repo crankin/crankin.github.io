@@ -1,8 +1,8 @@
 ---
 title: Via 313
-path: via313
+pid: via313
 launch: June 2015
-url: www.via313.com
+purl: www.via313.com
 tech: interactve design, HTML, CSS, JavaScript, Perch CMS
 shots:
  - img: via313-800-01-home.jpg

@@ -1,8 +1,8 @@
 ---
 title: Central Texas Gardener | KLRU
-path: ctg
+pid: ctg
 launch: January 2015
-url: www.klru.org/ctg
+purl: www.klru.org/ctg
 tech: interactve design, interface design, WordPress, PHP, HTML, CSS, JavaScript
 shots:
  - img: ctg-800-01.jpg
