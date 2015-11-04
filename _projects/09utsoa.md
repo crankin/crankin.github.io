@@ -1,7 +1,7 @@
 ---
 title: The University of Texas at Austin School of Architecture (UTSOA)
 launch: 2006; redesigned 2007 and 2010
-pid: utsos
+pid: utsoa
 tech: interface design, graphic design, PHP, HTML, CSS, Javascript, Flash/Actionscript, database design and development, site architecture, CodeIgnitor, ExpressionEngine, CakePHP
 shots:
  - img: 21.jpg
