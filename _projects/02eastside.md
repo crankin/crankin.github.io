@@ -4,6 +4,7 @@ pid: eastside
 launch: June 2015
 purl: www.klru.org/eastside
 tech: interface design, HTML, CSS, JavaScript, Jekyll
+shots:
  - img: aee-800-01.jpg
    alt: Home
  - img: aee-800-02.jpg
