@@ -43,7 +43,7 @@ title: crankin
   {% for proj in site.projects %}
   <div class="thumb"><a href="#{{ proj.pid }}"><img src="http://www.bigcheckfactory.com/img/{{ proj.pid }}/thumb.jpg"><h3>{{ proj.title }}</h3></a></div>
   <div class="remodal" data-remodal-id="{{ proj.pid }}">
-        <h4>{{ proj.title }}<i>({{ proj.launch }})</i></h4>
+        <h4>{{ proj.title }} <i>({{ proj.launch }})</i></h4>
         <p><a href="http://{{ proj.purl }}">{{ proj.purl }}</a></p>
         <p class="toolline">{{ proj.tech }}</p>
         {{ proj.content }}

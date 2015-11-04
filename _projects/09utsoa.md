@@ -16,10 +16,10 @@ shots:
    alt: Event Calendar
  - img: reserve.png
    alt: Reserve Equipment and Rooms
- - img: utsoa-editor1.jpg
-   alt: Recording my own threesome.
- - img: utsoa-editor2.jpg
-   alt: Equipment Rental
+ - img: utsoa-editor1.png
+   alt: Site Editor
+ - img: utsoa-editor2.png
+   alt: Page Editor
 ---            
 The web site of the University of Texas at Austin School of Architecture (UTSOA) serves the current students, faculty, and staff by providing information on the School's eight program areas in addition to current news, calendar items, course listings, and related University information. The site provides program information and contacts for prospective students. Sections of the site are also used by alumni for school news, events, and career guidance.
 

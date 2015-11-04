@@ -16,8 +16,6 @@ shots:
  - img: aee-320-01.jpg
    alt: Home
  - img: aee-320-02.jpg
-   alt: Home
- - img: aee-320-02.jpg
    alt: Page
  - img: aee-320-03.jpg
    alt: Chapter Title
