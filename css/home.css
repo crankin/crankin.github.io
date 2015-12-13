@@ -40,7 +40,9 @@ img {
   background: rgb(133,242,82);
 }
 
-.intro { width: 75em; }
+/* .intro { width: 75em; } */
+
+.intro { overflow: auto; }
 
 .intro p,
 .intro ul {
@@ -64,19 +66,24 @@ img {
 
 header {
   clear:both;
+  position: fixed;
+  top: 26%;
 }
 
 header h1 {
   font-family: verdana, sans-serif;
   padding: 0;
-  margin: 0 0 0.2em 1.2em;
+  margin: 0;
   font-size: 14rem;
   line-height: 0.8;
   color: rgb(94,111,117);
+  opacity: 0.4;
 }
 
 .screens {
-  width: 110em;
+  /* width: 110em; */
+  position: relative;
+  z-index: 11;
   margin-bottom: 2em;
 }
 
