@@ -42,7 +42,11 @@ img {
 
 /* .intro { width: 75em; } */
 
-.intro { overflow: auto; }
+.intro { 
+  overflow: auto; 
+  position: relative;
+  z-index: 14;
+}
 
 .intro p,
 .intro ul {
