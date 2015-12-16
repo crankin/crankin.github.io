@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <title>{{ model.title }} - {{ title }} - Christopher Rankin</title>
+</head>
+
+<body>  
+    <div class="container">
+    <header>
+        <h1>Christopher Rankin</h1>
+
+    <div class="wholeproject">
+    <h2>{{ model.title }}</h2>
+    <div id="proj-details">
+    <p>{{ model.launch }}</p>
+<p>{{ launch }}</p>
+    {%  if model.url %}
+    <p><a href="http://{{ model.url }}">{{ model.url }}</a></p>
+    {% endif %}
+    <p>{{ model.tech }}</p>
+    </div>
+    <div id="proj-desc">
+      {% block content %}{% endblock %}
+    </div>
+    <ul>
+        {% for item in model.gallery %}
+        <li><img src="/public/images/{{ item.filename }}"></li>
+        {% endfor %}
+    </ul>
+    </div>
+  </div>
+
+</body>
+</head>
