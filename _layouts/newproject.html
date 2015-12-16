@@ -12,7 +12,7 @@
         <h1>Christopher Rankin</h1>
 
     <div class="wholeproject">
-    <h2>{{ projects.title }}</h2>
+    <h2>{{ page.title }}</h2>
     <div id="proj-details">
     <p>{{ model.launch }}</p>
 <p>{{ launch }}</p>
@@ -22,6 +22,7 @@
     <p>{{ model.tech }}</p>
     </div>
     <div id="proj-desc">
+{{ content }}
     </div>
     <ul>
         {% for item in model.gallery %}
