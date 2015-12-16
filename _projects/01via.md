@@ -1,5 +1,6 @@
 ---
 title: Via 313
+layout: newproject
 pid: via313
 launch: June 2015
 purl: www.via313.com
