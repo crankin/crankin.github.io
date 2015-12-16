@@ -5,4 +5,4 @@ permalink: /:year/:month/:day/:title
 collections:
   projects:
     output: true
-    permalink: /sample/:path/
+    permalink: /projects/:path/
