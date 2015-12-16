@@ -5,3 +5,4 @@ permalink: /:year/:month/:day/:title
 collections:
   projects:
     output: true
+    layout: newproject
