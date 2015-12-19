@@ -13,7 +13,6 @@ title: crankin
   <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/jquery.remodal.css">
   <link rel="stylesheet" href="/css/home.css">
-
 </head>
 
 <body>
@@ -39,7 +38,7 @@ title: crankin
     </header>
 
     <section class="screens">
-      
+
   {% for proj in site.projects %}
   <div class="thumb"><a href="#{{ proj.pid }}"><img src="http://www.bigcheckfactory.com/img/{{ proj.pid }}/thumb.jpg"><h3>{{ proj.title }}</h3></a></div>
   <div class="remodal" data-remodal-id="{{ proj.pid }}">
@@ -48,14 +47,19 @@ title: crankin
         <p class="toolline">{{ proj.tech }}</p>
         {{ proj.content }}
         {% for pic in proj.shots %}
-        <img src="http://www.bigcheckfactory.com/img/{{ proj.pid }}/{{ pic.img }}" alt="{{ pic.alt }}">
+        <img src="/images/back.png" data-src="http://www.bigcheckfactory.com/img/{{ proj.pid }}/{{ pic.img }}" alt="{{ pic.alt }}">
         {% endfor %}
       </div>
-  {% endfor %}      
+  {% endfor %}
     </section>
 
     <script src="/js/zepto.min.js"></script>
     <script src="/js/jquery.remodal.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.unveil.min.js"></script>
+    <script type="text/javascript" charset="utf-8">
+      $(document).ready(function() {
+        $(".remodal img").unveil();
+      });
+    </script>
   </body>
   </html>
-  
