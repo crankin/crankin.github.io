@@ -42,8 +42,8 @@ img {
 
 /* .intro { width: 75em; } */
 
-.intro { 
-  overflow: auto; 
+.intro {
+  overflow: auto;
   position: relative;
   z-index: 14;
 }
@@ -122,6 +122,8 @@ header h1 {
 .remodal img {
   margin:1em 0;
   border:2px solid #555;
+  opacity: 0;
+  transition: opacity .3s ease-in;
 }
 
 .remodal h4 {

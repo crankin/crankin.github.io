@@ -59,31 +59,11 @@ title: crankin
     <script src="/js/jquery.remodal.min.js"></script>
     <script type="text/javascript" src="/js/jquery.unveil.min.js"></script>
     <script type="text/javascript">
-
-    $(document).on('opened', '.remodal', function() {
-      console.log('Modal is opened');
-      alert('Modal is opened');
-      $('img', this).unveil();
-    });
-
-//     $(document).on('opening', '.remodal', function () {
-// console.log('Modal is opening');
-// });
-
-$(document).ready(function() {
-
-      //  $('.thumb a').on('click', function(e) {
-        //  e.preventDefault();
-        //  $('.remodal img').unveil();
-      //  });
-      //  $(".remodal img").unveil();
+      $(document).on('opened', '.remodal', function() {
+        $('img', this).unveil(200, function() {
+          this.style.opacity = 1;
+        });
       });
-
-      // $('.ctg a[href="#"]').on('click', function(e) {
-      //     e.preventDefault();
-      //     $('.ctg .desc').slideToggle('slow');
-      //     $('.ctg img').unveil(200);
-      // });
     </script>
   </body>
   </html>
