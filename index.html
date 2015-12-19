@@ -58,8 +58,18 @@ title: crankin
     <script type="text/javascript" src="/js/jquery.unveil.min.js"></script>
     <script type="text/javascript" charset="utf-8">
       $(document).ready(function() {
-        $(".remodal img").unveil();
+        $('.thumb a').on('click', function(e) {
+          e.preventDefault();
+          $('.remodal img').unveil();
+        });
+      //  $(".remodal img").unveil();
       });
+
+      // $('.ctg a[href="#"]').on('click', function(e) {
+      //     e.preventDefault();
+      //     $('.ctg .desc').slideToggle('slow');
+      //     $('.ctg img').unveil(200);
+      // });
     </script>
   </body>
   </html>
