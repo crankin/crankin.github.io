@@ -41,25 +41,28 @@ title: crankin
 
   {% for proj in site.projects %}
   <div class="thumb"><a href="#{{ proj.pid }}"><img src="http://www.bigcheckfactory.com/img/{{ proj.pid }}/thumb.jpg"><h3>{{ proj.title }}</h3></a></div>
+
   <div class="remodal" data-remodal-id="{{ proj.pid }}">
-        <h4>{{ proj.title }} <i>({{ proj.launch }})</i></h4>
-        <p><a href="http://{{ proj.purl }}">{{ proj.purl }}</a></p>
-        <p class="toolline">{{ proj.tech }}</p>
-        {{ proj.content }}
-        {% for pic in proj.shots %}
-        <img src="/images/back.png" data-src="http://www.bigcheckfactory.com/img/{{ proj.pid }}/{{ pic.img }}" alt="{{ pic.alt }}">
-        {% endfor %}
-      </div>
+    <h4>{{ proj.title }} <i>({{ proj.launch }})</i></h4>
+    <p><a href="http://{{ proj.purl }}">{{ proj.purl }}</a></p>
+    <p class="toolline">{{ proj.tech }}</p>
+    {{ proj.content }}
+    {% for pic in proj.shots %}
+    <img src="/images/back.png" data-src="http://www.bigcheckfactory.com/img/{{ proj.pid }}/{{ pic.img }}" alt="{{ pic.alt }}">
+    {% endfor %}
+  </div>
+
   {% endfor %}
-    </section>
+  </section>
 
     <script src="/js/zepto.min.js"></script>
     <script src="/js/jquery.remodal.min.js"></script>
     <script type="text/javascript" src="/js/jquery.unveil.min.js"></script>
-    <script type="text/javascript" charset="utf-8">
+    <script type="text/javascript">
 
-    $(document).on('opening', '.remodal', function() {
-      alert('hell yeah');
+    $(document).on('opened', '.remodal', function() {
+      console.log('Modal is opened');
+      alert('Modal is opened');
     });
 
 //     $(document).on('opening', '.remodal', function () {
