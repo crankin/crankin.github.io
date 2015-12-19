@@ -58,10 +58,13 @@ title: crankin
     <script type="text/javascript" src="/js/jquery.unveil.min.js"></script>
     <script type="text/javascript" charset="utf-8">
       $(document).ready(function() {
-        $('.thumb a').on('click', function(e) {
-          e.preventDefault();
-          $('.remodal img').unveil();
-        });
+        $(document).on('opening', '.remodal', function () {
+  console.log('Modal is opening');
+});
+      //  $('.thumb a').on('click', function(e) {
+        //  e.preventDefault();
+        //  $('.remodal img').unveil();
+      //  });
       //  $(".remodal img").unveil();
       });
 
