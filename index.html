@@ -63,6 +63,7 @@ title: crankin
     $(document).on('opened', '.remodal', function() {
       console.log('Modal is opened');
       alert('Modal is opened');
+      $('img', this).unveil();
     });
 
 //     $(document).on('opening', '.remodal', function () {
