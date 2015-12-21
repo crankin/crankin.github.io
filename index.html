@@ -39,9 +39,12 @@ title: crankin
 
     <section class="screens">
 
-  {% for proj in site.projects %}
-  <div class="thumb"><a href="#{{ proj.pid }}"><img src="http://www.bigcheckfactory.com/img/{{ proj.pid }}/thumb.jpg"><h3>{{ proj.title }}</h3></a></div>
+  {% for project in site.data.projectlist %}
+  <div class="thumb"><a href="#{{ project.pid }}"><img src="http://www.bigcheckfactory.com/img/{{ project.pid }}/thumb.jpg"><h3>{{ project.title }}</h3></a></div>
+  {% endfor %}
 
+
+  {% for proj in site.projects %}
   <div class="remodal" data-remodal-id="{{ proj.pid }}">
     <h4>{{ proj.title }} <i>({{ proj.launch }})</i></h4>
     <p><a href="http://{{ proj.purl }}">{{ proj.purl }}</a></p>
