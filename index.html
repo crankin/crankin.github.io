@@ -49,15 +49,15 @@ title: crankin
   </div>
   {% endfor %}
 
-    <script src="/js/zepto.min.js"></script>
-    <script src="/js/jquery.remodal.min.js"></script>
-    <script type="text/javascript" src="/js/jquery.unveil.min.js"></script>
+    <script src="js/zepto.min.js"></script>
+    <script src="js/jquery.remodal.min.js"></script>
+    <script type="text/javascript" src="js/jquery.unveil.min.js"></script>
     <script type="text/javascript">
       $(document).on('opened', '.remodal', function() {
         $('img', this).unveil(200, function() {
           this.css('opacity', 1);
-          $('.remodal-overlay').css('background', 'rgba(239, 65, 54, 0.9)');
         });
+        $('.remodal-overlay').css('background', 'rgba(239, 65, 54, 0.9)');
       });
     </script>
   </body>
