@@ -49,17 +49,26 @@ title: crankin
   </div>
   {% endfor %}
 
-    <script src="js/zepto.min.js"></script>
+    <!-- <script src="js/zepto.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/jquery.remodal.min.js"></script>
     <script type="text/javascript" src="js/jquery.unveil.min.js"></script>
     <script type="text/javascript">
       $(document).on('opened', '.remodal', function() {
-        var whichone = $(this).attr('data-remodal-id');
-        alert(whichone);
-        $('img', this).unveil(400, function() {
+        $('img').unveil(400, function() {
           this.css('opacity', 1);
         });
-        $('.remodal-overlay').css('background', 'rgba(239, 65, 54, 0.9)');
+        var whichone = $(this).attr('data-remodal-id');
+        switch (whichone) {
+        case 'via313':
+          $('.remodal-overlay').css('background', 'rgba(239, 65, 54, 0.9)');
+          break;
+        case 'truefab':
+          $('.remodal-overlay').css('background', 'rgba(88, 131, 156, 0.9)');
+          break;
+        default:
+          $('.remodal-overlay').css('background', 'rgba(55, 66, 77, 0.9)');
+        }
       });
     </script>
   </body>
