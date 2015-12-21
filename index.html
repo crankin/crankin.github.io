@@ -54,7 +54,9 @@ title: crankin
     <script type="text/javascript" src="js/jquery.unveil.min.js"></script>
     <script type="text/javascript">
       $(document).on('opened', '.remodal', function() {
-        $('img', this).unveil(200, function() {
+        var whichone = $(this).attr('data-remodal-id');
+        alert(whichone);
+        $('img', this).unveil(400, function() {
           this.css('opacity', 1);
         });
         $('.remodal-overlay').css('background', 'rgba(239, 65, 54, 0.9)');
