@@ -17,7 +17,8 @@
     </header>
 
     <div class="resume">
-        <section class="content workexp" role="main">
+      {{ content }}
+        <!-- <section class="content workexp" role="main">
             <h2>Experience</h2>
             {% block experience %}{% endblock %}
         </section>
@@ -32,13 +33,11 @@
 
             <h3>Other Experience</h3>
             {% block other %}{% endblock %}
-        </section>
+        </section> -->
     </div>
     </div>
 
- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<!--<script src="http://cdnjs.cloudflare.com/ajax/libs/zepto/1.0rc1/zepto.min.js"></script>
-    -->
+    <script src="/js/zepto.min.js"></script>
     <script type="text/javascript" charset="utf-8">
         $('#contactme').hide();
         $('#showcontact').on('click', function(e) {

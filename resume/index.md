@@ -3,7 +3,8 @@ layout: resume
 title: Resume
 ---
 
-{% block experience %}
+<div class="resume">
+<section class="content workexp" role="main">
 <h2>experience</h2>
 <h3>Web Developer</h3>
 <h4>KLRU-TV, Austin PBS</h4>
@@ -33,9 +34,9 @@ title: Resume
 <h4>Austin Museum of Art</h4>
 <h4>November 1994 - September 1997</h4>
 <p>Managed all new member campaigns and renewal membership requests. Oversaw membership increase of 250% over a three-year period. Organized and managed corporate and individual annual fund campaign. Assisted in capital campaign to expand museum into downtown space. Designed membership collateral pieces including mailings, letterhead, membership cards, and brochures. Developed and designed the museum’s first website. Trained and managed volunteers and interns.</p>
-{% endblock %}
+</section>
 
-{% block tools %}
+<section class="content otherexp">
 <h2 style="margin-top:0.5rem;">tools</h2>
 <ul>
   <li>HTML5, CSS3, Sass, Stylus, Compass</li>
@@ -46,9 +47,7 @@ title: Resume
   <li>MySQL, SQLite, CouchDB, MongoDB</li>
   <li>Photoshop, Illustrator, InDesign, Flash, Final Cut Pro, iMovie, Audacity</li>
 </ul>
-{% endblock %}
 
-{% block education %}
 <h2>education</h2>
 <div id="trinity">
 <p>Trinity University</p>
@@ -57,9 +56,7 @@ title: Resume
 <p>BA, Art History with Honors</p>
 <p>Honors Thesis: <em>Ethics and Aesthetics in the Self-Definition of Black Political Artists of the 1960s &amp; 1970s</em></p>
 </div>
-{% endblock %}
 
-{% block other %}
 <h2>other experience</h2>
 <p>Co-founder, Austin Museum of Digital Art (AMODA), 1997</p>
 <p>Editor, Trinity Review, Trinity University, 1991-1994</p>
@@ -68,4 +65,5 @@ title: Resume
 <p>Writer and Teacher, Picasso, Braque, and the Dawn of Cubism, Barnes &amp; Noble University (powered.com), 2001-2002</p>
 <p>Teacher, Introduction to Flash and Design for Non-Designers, Barnes &amp; Noble University (powered.com), 2001-2002</p>
 <p>Newsletter Editor &amp; Steering Committee Member, Old West Austin Neighborhood Association (OWANA), 2009-2011 &amp; 2014-2015</p>
-{% endblock %}
+</section>
+</div>
