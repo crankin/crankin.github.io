@@ -17,32 +17,25 @@ title: crankin
 
 <body>
   <section class="intro">
-    <p>crankin is a digital studio located in Austin, Texas. We work with art and cultural organizations, nonprofits, local businesses, artists, architects, and creative individuals to design and develop beautiful and useful interactive products and services.</p>
+  <p>crankin is the <i>nom de plume</i> of Christopher Rankin, a web developer / designer / creative coder in Austin, Texas, with over 18 years of public and nonprofit experience working for organizations like KLRU, the UT Austin School of Architecture, the Texas Commission on the Arts, and the Austin Museum of Art.</p>
+  <p>I enjoy working with art and cultural nonprofits, local businesses, artists, architects, and creative individuals to design and develop beautiful and useful interactive projects. I infrequently write about current interests &mdash; the intersection of art and technology, networks, public art, urban interventions, museums, animated GIFs &mdash; at <a href="http://getcrank.in/blog">getcrank.in/blog</a>.</p>
+  <ul>
+    <li>crankin@getcrank.in</li>
+    <li>call me</li>
+    <li><a href="https://twitter.com/_crankin_">@_crankin_</a></li>
+    <li><a href="https://pinboard.in/u:crankin">pinboard.in/u:crankin</a></li>
+  </ul>
+  </section>
 
-    <p>We've worked on small and large websites, mobile apps, and a bunch of other online projects. We can guide you through the entire process &mdash; from planning to launch &mdash; or jump in at any stage and work with your in-house creative department or outside design agency.<br><br>
-      We work closely with clients to make sure the project meets their goals. And we make sure that we provide them with simple, useable tools they can use to manage or expand the project in the future.</p>
+  <header>
+    <h1>{{ page.title }}</h1>
+  </header>
 
-      <p>crankin is also the <i>nom de plume</i> of Christopher Rankin, a web developer / designer / creative coder with over 18 years of public and nonprofit experience working for KLRU, the UT-Austin School of Architecture, the Texas Commission on the Arts, and the Austin Museum of Art. He sometimes writes about current interests &mdash; the intersection of art and technology, networks, public art, urban interventions, museums, animated GIFs &mdash; at <a href="http://getcrank.in/blog">getcrank.in/blog</a>.</p>
-
-      <ul>
-        <li>crankin@getcrank.in</li>
-        <li><a href="https://twitter.com/_crankin_">@_crankin_</a></li>
-        <!-- <li><a href="#">tumblr</a></li> -->
-        <li><a href="https://pinboard.in/u:crankin">pinboard.in/u:crankin</a></li>
-        <!-- <li><a href="#">codeinthecity</a></li> -->
-      </ul>
-    </section>
-
-    <header>
-      <h1>{{ page.title }}</h1>
-    </header>
-
-    <section class="screens">
-
+  <section class="screens">
   {% for project in site.data.projectlist %}
   <div class="thumb"><a href="#{{ project.pid }}"><img src="http://www.bigcheckfactory.com/img/{{ project.pid }}/thumb.jpg"><h3>{{ project.title }}</h3></a></div>
   {% endfor %}
-
+  </section>
 
   {% for proj in site.projects %}
   <div class="remodal" data-remodal-id="{{ proj.pid }}">
@@ -54,9 +47,7 @@ title: crankin
     <img src="/images/back.png" data-src="http://www.bigcheckfactory.com/img/{{ proj.pid }}/{{ pic.img }}" alt="{{ pic.alt }}">
     {% endfor %}
   </div>
-
   {% endfor %}
-  </section>
 
     <script src="/js/zepto.min.js"></script>
     <script src="/js/jquery.remodal.min.js"></script>
