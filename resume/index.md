@@ -40,7 +40,7 @@ title: Resume
 <h2 style="margin-top:0.5rem;">tools</h2>
 <ul>
   <li>HTML5, CSS3, Sass, LESS, Stylus, Bourbon, Neat</li>
-  <li>JavaScript, jQuery, Node.js, Express, Angular, Backbone</li>
+  <li>JavaScript, jQuery, Node.js, Express, AngularJS, Backbone</li>
   <li>WordPress, ExpressionEngine, Drupal, Indexhibit, Stacey, Perch, Jekyll</li>
   <li>Git, Grunt, Gulp, Vim, Bootstrap, Foundation</li>
   <li>PHP, CodeIgniter, Zend, CakePHP, Kohana, Symfony</li>
