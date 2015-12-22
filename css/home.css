@@ -53,16 +53,17 @@ header {
   position: relative;
   width: 17em;
   text-align: center;
+  margin-top: 1em;
 }
 
 header h1 {
   font-family: verdana, sans-serif;
-  padding: 6px 0;
+  padding: 0;
   margin: 0;
-  font-size: 3rem;
+  font-size: 2.1rem;
   line-height: 1;
   color: rgb(94,111,117);
-  opacity: 0.4;
+  /*opacity: 0.4;*/
 }
 
 .intro {
@@ -86,6 +87,9 @@ header h1 {
 .intro ul {
   list-style: none;
   padding-left: 0;
+  border-top: 2px solid #777;
+    margin-top: 40px;
+    padding-top: 20px;
 }
 
 .intro li {
