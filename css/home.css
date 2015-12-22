@@ -105,8 +105,8 @@ header h1 {
 
 .screens div {
   display: inline-block;
-  width: 15em;
-  margin: 1em;
+  width: 14em;
+  margin: 1em 0.5em;
   vertical-align: top;
 }
 
