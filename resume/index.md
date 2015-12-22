@@ -9,7 +9,7 @@ title: Resume
 <h3>Web Developer</h3>
 <h4>KLRU-TV, Austin PBS</h4>
 <h4>February 2014 - present</h4>
-<p>Manage front-end templates and back-end code base for station web sites. Build sites and microsites to support local productions, fund-raising campaigns, and educational initiatives. Designed and coded site for long-form news story about Eastside High that included over half an hour of video. Collaborated with Producers and Interactive Director to launch reconfigured and redesigned website for Central Texas Gardener. Coded microsite for Austin City Limits Hall of Fame. Keep updated on relevant innovations in web video, content management systems, and related topics in order to incorporate best practices and identify opportunities for future development. Troubleshoot code and database problems for existing websites. Collaborate with Interactive Director to help inform station’s digital strategy.</p>
+<p>Manage front-end templates and back-end code base for station websites. Build sites and microsites to support local productions, fundraising campaigns, and educational initiatives. Designed and coded site for long-form news story about Eastside High that included over half an hour of video. Collaborated with Producers and Interactive Director to launch reconfigured and redesigned website for Central Texas Gardener. Coded microsite for Austin City Limits Hall of Fame. Keep updated on relevant innovations in web video, content management systems, and related topics in order to incorporate best practices and identify opportunities for future development. Troubleshoot code and database problems for existing websites. Collaborate with Interactive Director to help inform station’s digital strategy.</p>
 
 <h3>Web Designer</h3>
 <h4>Whole Foods Market</h4>
@@ -18,7 +18,7 @@ title: Resume
 
 <h3>Freelance Web Developer and Designer</h3>
 <h4>September 2009 - present</h4>
-<p>Design and develop sites for nonprofits, arts organizations, small businesses, and creative individuals. Recent projects include a site for a bicycle builder with a custom one-page WordPress theme and Flickr integration, a skateboard company site with an online store, and a multi-user, calendar-based site with a WordPress back-end for a regional arts organization. Work both independently and collaboratively with other designers. Train and support clients in website management and content creation.</p>
+<p>Design and develop sites for nonprofits, arts organizations, small businesses, and creative individuals. Recent projects include a site for a popular local pizza restaurant, a custom one-page WordPress theme and Flickr integration for a bicycle builder, a skateboard company site with an online store, and a multi-user, calendar-based site with a WordPress back-end for a regional arts organization. Work both independently and collaboratively with other designers. Train and support clients in website management and content creation.</p>
 
 <h3>Webmaster</h3>
 <h4>University of Texas at Austin School of Architecture</h4>
