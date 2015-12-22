@@ -39,17 +39,35 @@ img {
   background: rgb(133,242,82);
 }
 
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+header h1 {
+  font-family: verdana, sans-serif;
+  padding: 6px 0;
+  margin: 0;
+  font-size: 3rem;
+  line-height: 1;
+  color: rgb(94,111,117);
+  opacity: 0.4;
+}
+
 .intro {
   overflow: auto;
   position: relative;
   z-index: 14;
+  width: 17em;
 }
 
 .intro p,
 .intro ul {
-  float:left;
-  display: block;
-  width: 17em;
+  /*float:left;
+  display: block;*/
   font-size: 0.8rem;
   line-height:1.4;
   margin: 1em;
@@ -65,25 +83,9 @@ img {
   margin-bottom: 1.1em;
 }
 
-header {
-  clear:both;
-  position: fixed;
-  top: 26%;
-}
-
-header h1 {
-  font-family: verdana, sans-serif;
-  padding: 0;
-  margin: 0;
-  font-size: 14rem;
-  line-height: 0.8;
-  color: rgb(94,111,117);
-  opacity: 0.4;
-}
-
 .screens {
   position: relative;
-  z-index: 11;
+  /*z-index: 11;*/
   margin-bottom: 2em;
 }
 
@@ -108,11 +110,15 @@ header h1 {
 
 .projd {  color: #aaa; }
 
-.remodal { background: rgb(250,250,250); }
+.remodal {
+  background: rgb(250,250,250);
+  border-radius: 0;
+}
 
 .remodal p {
   text-align: left;
-  font-size: 0.8rem;line-height:1.5;
+  font-size: 0.8rem;
+  line-height:1.4;
 }
 
 .remodal img {
