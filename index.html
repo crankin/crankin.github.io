@@ -16,11 +16,11 @@ title: crankin
 </head>
 
 <body>
-  <header>
-    <h1>{{ page.title }}</h1>
-  </header>
-
+  <div class="wrapper">
   <section class="intro">
+    <header>
+      <h1>{{ page.title }}</h1>
+    </header>
   <p>crankin is the <i>nom de plume</i> of Christopher Rankin, a web developer / designer / creative coder in Austin, Texas, with over 18 years of public and nonprofit experience working for organizations like KLRU, the UT Austin School of Architecture, the Texas Commission on the Arts, and the Austin Museum of Art. All the details are available in my <a href="/resume">resume</a>.</p>
   <p>I enjoy working with art and cultural nonprofits, local businesses, artists, architects, and creative individuals to design and develop beautiful and useful interactive projects. I infrequently write about current interests &mdash; the intersection of art and technology, networks, public art, urban interventions, museums, animated GIFs &mdash; at <a href="http://getcrank.in/blog">getcrank.in/blog</a>.</p>
   <ul>
@@ -36,6 +36,7 @@ title: crankin
   <div class="thumb"><a href="#{{ project.pid }}"><img src="http://www.bigcheckfactory.com/img/{{ project.pid }}/thumb.jpg"><h3>{{ project.title }}</h3></a></div>
   {% endfor %}
   </section>
+  </div>
 
   {% for proj in site.projects %}
   <div class="remodal" data-remodal-id="{{ proj.pid }}">

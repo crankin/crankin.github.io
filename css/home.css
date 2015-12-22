@@ -39,11 +39,19 @@ img {
   background: rgb(133,242,82);
 }
 
+.wrapper {
+  display:-webkit-flex;
+display:flex;
+-webkit-justify-content: space-around;
+justify-content: space-around;
+flex-wrap:wrap;
+-webkit-justify-content: wrap;
+width: 99%;
+}
+
 header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+  position: relative;
+  width: 17em;
   text-align: center;
 }
 
@@ -58,10 +66,11 @@ header h1 {
 }
 
 .intro {
-  overflow: auto;
-  position: relative;
-  z-index: 14;
-  width: 17em;
+  /*overflow: auto;
+  position: relative;*/
+  /*z-index: 14;
+  width: 17em;*/
+    flex: 1 1 0;
 }
 
 .intro p,
@@ -84,9 +93,10 @@ header h1 {
 }
 
 .screens {
-  position: relative;
+  /*position: relative;*/
   /*z-index: 11;*/
   margin-bottom: 2em;
+    flex: 3 1 0;
 }
 
 .screens div {
