@@ -6,3 +6,6 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
+prose:
+  rooturl: '_posts'
+  siteurl: 'http://crankin.github.io/blog/'
