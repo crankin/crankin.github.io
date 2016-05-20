@@ -32,7 +32,6 @@ img {
 .thumb a h3 {
   color: rgb(0,0,0);
   border-bottom: 1px solid black;
-  display: inline;
 }
 
 .thumb a:hover h3 {
@@ -40,46 +39,35 @@ img {
 }
 
 .wrapper {
-  display:-webkit-flex;
-display:flex;
--webkit-justify-content: space-around;
-justify-content: space-around;
-flex-wrap:wrap;
--webkit-justify-content: wrap;
-width: 99%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 98%;
 }
 
-header {
-  position: relative;
-  width: 17em;
-  margin-top: 1em;
+.intro {
+    flex: 1 1 0;
+    padding: 1em;
+    min-width: 20em;
 }
 
 header h1 {
   font-family: verdana, sans-serif;
   padding: 0;
-  margin: 12px;
+  margin: 0;
   font-size: 2.1rem;
   line-height: 1;
   color: rgb(94,111,117);
-  /*opacity: 0.4;*/
-}
-
-.intro {
-  /*overflow: auto;
-  position: relative;*/
-  /*z-index: 14;
-  width: 17em;*/
-    flex: 1 1 0;
 }
 
 .intro p,
 .intro ul {
-  /*float:left;
-  display: block;*/
   font-size: 0.8rem;
   line-height:1.4;
-  margin: 1em;
+  margin: 1em 0;
   color: #777;
 }
 
@@ -87,8 +75,8 @@ header h1 {
   list-style: none;
   padding-left: 0;
   border-top: 2px solid #777;
-    margin-top: 40px;
-    padding-top: 20px;
+  margin-top: 3em;
+  padding-top: 1.5em;
 }
 
 .intro li {
@@ -96,29 +84,36 @@ header h1 {
 }
 
 .screens {
-  /*position: relative;*/
-  /*z-index: 11;*/
+  min-width: 20em;
   margin-bottom: 2em;
-    flex: 3 1 0;
+  flex: 3 1 0;
+  display:-webkit-flex;
+  display:flex;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .screens div {
-  display: inline-block;
-  width: 14em;
+  /*width: 14em;*/
   margin: 1em 0.5em;
   vertical-align: top;
+  flex: 1 1 14em;
 }
 
 .screens img {
   border: 1px solid #555;
   padding: 0.3em;
   background: none;
+  display: block;
 }
 
 .screens h3 {
-  font-size:0.8rem;
-  margin: 0.2em 0;
+  font-size: 0.8rem;
+  margin: 0.4em 0;
   font-weight: normal;
+  display: inline;
 }
 
 .projd {  color: #aaa; }
@@ -137,8 +132,6 @@ header h1 {
 .remodal img {
   margin:1em 0;
   border:2px solid #555;
-  /*opacity: 0;
-  transition: opacity .3s ease-in;*/
 }
 
 .remodal h4 {
