@@ -1,5 +1,4 @@
 name: crankin
-markdown: redcarpet
 pygments: true
 permalink: /:year/:month/:day/:title
 collections:
