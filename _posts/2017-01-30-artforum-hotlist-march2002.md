@@ -1,11 +1,11 @@
 ---
-published: false
+published: true
 layout: post
 tags: hotlist
 ---
 ## Artforum Hotlist - March 2002
 
-Compiled by Vuk Cosic
+_Compiled by Vuk Cosic_
 
 **Mumbleboy**  
 www.mumbleboy.com/mumbleboy  
@@ -26,4 +26,3 @@ online
 **Netzwissenchaft**  
 www.Netzwissenchaft.de/kuenst.htm  
 offline
-
