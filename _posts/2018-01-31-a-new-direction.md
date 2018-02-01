@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A New Direction
+title: A Really New Direction
 tags: testing
 published: true
 ---
