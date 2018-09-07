@@ -34,7 +34,7 @@ title: crankin
 
   <section class="screens">
   {% for project in site.data.projectlist %}
-  <div class="thumb"><a href="#{{ project.pid }}"><img src="http://www.bigcheckfactory.com/img/{{ project.pid }}/thumb.jpg"><h3>{{ project.title }}</h3></a></div>
+  <div class="thumb"><a href="#{{ project.pid }}"><img src="//www.bigcheckfactory.com/img/{{ project.pid }}/thumb.jpg"><h3>{{ project.title }}</h3></a></div>
   {% endfor %}
   </section>
   </div>
@@ -46,12 +46,12 @@ title: crankin
     <p class="toolline">{{ proj.tech }}</p>
     {{ proj.content }}
     {% for pic in proj.shots %}
-    <img src="/images/back.png" data-src="http://www.bigcheckfactory.com/img/{{ proj.pid }}/{{ pic.img }}" alt="{{ pic.alt }}">
+    <img src="/images/back.png" data-src="//www.bigcheckfactory.com/img/{{ proj.pid }}/{{ pic.img }}" alt="{{ pic.alt }}">
     {% endfor %}
   </div>
   {% endfor %}
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
     <script src="js/remodal.min.js"></script>
     <script type="text/javascript" src="js/jquery.unveil.min.js"></script>
     <script type="text/javascript">
