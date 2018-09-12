@@ -26,7 +26,7 @@
     </div>
     <ul>
         {% for item in model.gallery %}
-        <li><img src="/public/images/{{ item.filename }}"></li>
+        <li><img src="https://s3.ca-central-1.amazonaws.com/crankin-portfolio/{{ item.filename }}"></li>
         {% endfor %}
     </ul>
     </div>
